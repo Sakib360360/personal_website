@@ -1,6 +1,6 @@
 body{
     font-family: 'Nanum Gothic', sans-serif;
-    
+    margin: auto;
 }
 .sec1{
     display: flex;
@@ -23,7 +23,29 @@ body{
     border-radius: 33px;
     font-size: 11px;
     position: absolute;
+    box-shadow: 1px 1px 5px #fc8f49;
 }
 .sec2{
-    background-image: url(images/shapes/7.png);
+    background-image: url('images/shapes/7.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0%;
+    display: flex;
+    width: 100%;
+
+}
+.aboutmeimg {
+    width: 178%;
+    margin: 29% 0% -2% 62%;
+    position: relative;
+}
+.aboutright {
+    padding: 8% 5% 0% 33%;
+}
+.aboutmeh4 {
+    color: #625f5f;
+    margin-right: 77px;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 18px;
 }
