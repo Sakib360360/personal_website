@@ -1,5 +1,6 @@
 body{
     font-family: 'Nanum Gothic', sans-serif;
+    
 }
 .sec1{
     display: flex;
@@ -23,6 +24,6 @@ body{
     font-size: 11px;
     position: absolute;
 }
-.aboutme{
-    background-image: url("images/shapes/7.png");
+.sec2{
+    background-image: url(images/shapes/7.png);
 }
