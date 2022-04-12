@@ -10,9 +10,11 @@ body{
 }
 .headleft{
     padding: 7% 3% 4% 4%;
+    width: 60%;
 }
 .headright{
     padding: 4% 3% 4% 4%;
+    width: 40%;
 }
 #button {
     text-decoration: none;
@@ -24,6 +26,7 @@ body{
     font-size: 11px;
     position: absolute;
     box-shadow: 1px 1px 5px #fc8f49;
+    cursor: pointer;
 }
 .sec2{
     background-image: url('images/shapes/7.png');
@@ -34,13 +37,19 @@ body{
     width: 100%;
 
 }
+.aboutleft{
+    width: 50%;
+}
 .aboutmeimg {
-    width: 78%;
+    width: 100%;
     margin: 29% 0% -2% 62%;
     position: relative;
 }
 .aboutright {
     padding: 8% 5% 0% 33%;
+}
+.aboutright h2{
+    font-size: 40px;
 }
 .aboutmeh4 {
     color: #625f5f;
@@ -53,7 +62,8 @@ body{
     margin: 0px 0px;
     padding-top: 69px;
     background-color: #f5f3f2;
-    height: 1000px;
+    height: auto;
+    padding-bottom: 100px;
 }
 .sec3up {
     text-align: center;
@@ -74,9 +84,15 @@ body{
     width: 92%;
     padding: 11px;
     border-radius: 20px;
+    transition: transform 1s linear .2s ;
+    
+}
+.fimg:hover{
+    transform: scale(1.2);
+    /* width: 100%; */
 }
 .r1 {
-    width: 278px;
+    width: 360px;
     align-items: center;
     justify-content: center;
     margin: 30px;
@@ -84,19 +100,24 @@ body{
     height: 454px;
     border-radius: 20px;
     background-color: #ffffff;
+    overflow: hidden;
     box-shadow:
        inset 0 -3em 3em rgba(0,0,0,0.1),
              0 0  0 2px rgb(255,255,255),
              0.3em 0.3em 1em rgba(0,0,0,0.3);
 }
+
 .sec3h2 {
     padding-left: 13px;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
 }
 .sec3p {
     padding-left: 13px;
     font-size: 15px;
+}
+.sec3last{
+
 }
 .container {
     display: flex;
@@ -124,18 +145,125 @@ body{
     background-color: rgba(0, 0, 0, 0.822);
     position: absolute;
     width: 100%;
+    text-align: center;
 }
 .fh {
-    margin-left: 500px;
+    /* margin-left: 500px; */
     color: #cfcccc;
 }
 .fp {
-    margin-left: 455px;
+    /* margin-left: 455px; */
     color: #bbbfc6;
 }
 .fp1 {
-    margin-left: 455px;
+    /* margin-left: 455px; */
     color: #bbbfc6;
     font-size: 11px;
-    margin-left: 550px;
+    /* margin-left: 550px; */
 }
+
+/* 
+ */
+
+
+
+
+ #newcomment {
+    border: 1px solid #4e454566;
+    border-radius: 10px;
+    box-shadow: 0px 0px 11px #8080805e;
+}
+#submit {
+    text-decoration: none;
+    padding: 2% 6.6%;
+    background-image: linear-gradient(120deg, #fc8f49, rgb(254 80 49));
+    margin-top: 10px;
+    color: white;
+    border-radius: 33px;
+    font-size: 11px;
+    border: 0;
+    cursor: pointer;
+    /* position: absolute; */
+    box-shadow: 1px 1px 5px #fc8f49;
+}
+
+@media only screen and (max-width: 600px) {
+    .sec1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .sec2 {
+        display: flex;
+        flex-direction: column-reverse;
+        background-image: none;
+        text-align: center;
+    }
+    .aboutright{
+        padding: 0px;
+    }
+    .aboutright h2{
+        margin-left: 0px;
+    }
+    .aboutmeh4{
+        margin: 5%;
+    }
+    #button {
+        padding: 2%;
+        text-align: center;
+        /* margin-bottom: 13px; */
+        position: relative;
+    }
+    .headleft {
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        /* margin: 0px -25px; */
+        /* margin: 0; */
+    }
+    .headleft h1, h4, p{
+        margin: 30px 30px;
+    }
+    .headright {
+        /* padding: 10px; */
+        width: 80%;
+        text-align: center;
+    }
+    .sec3{
+
+    }
+    .sec3up{
+        margin: 0;
+    }
+    .sec3btm {
+        display: flex;
+        flex-direction: column;
+    }
+    .r1 {
+        width: 300px;
+        margin: auto;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .sec3last{
+
+    }
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 250px;
+        margin: auto;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .lh{
+        margin: auto;
+        color: green;
+    }
+    #lp{
+        margin: 30px;
+    }
+    .fh{
+        
+    }
+  }
